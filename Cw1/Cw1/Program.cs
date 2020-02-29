@@ -7,11 +7,12 @@ namespace Cw1
 {
     public class Program
     {
-        public static async Task(string[] args)
+        public static async System.Threading.Tasks.Task main(string[] args)
         {
-           
+
+            string url = args.Length > 0 ? args[0] : "httpsL//www.pja.edu.pl";
             var httpClient = new System.Net.Http.HttpClient();
-            var resposne = await Client.GetAsync("http://www.pja.edu.pl");
+            var resposne = await client.GetAsync("http://www.pja.edu.pl");
 
             if (IAsyncResult.IsSuccessStatusCode)
             {
